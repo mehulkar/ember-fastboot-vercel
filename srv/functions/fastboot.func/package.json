@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.3",
-    "fastboot": "^3.3.2"
+    "fastboot": "^3.3.2",
+    "node-fetch": "^3.2.10"
   }
 }
