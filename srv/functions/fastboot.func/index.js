@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
   console.log('CWD', process.cwd());
   console.log('--------------------');
 
-  let app = new FastBoot({ distPath: 'dist' });
+  let app = new FastBoot({ distPath: './dist' });
 
   console.log('--------------------');
   console.log(`req.url`, req.url);
