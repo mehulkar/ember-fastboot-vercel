@@ -25,3 +25,9 @@ ls -al dist/
 
 echo "what do we have in dist/functions/fastboot.func ?"
 ls -al dist/functions/fastboot.func
+
+echo "Creating .vercel directory"
+mkdir -p .vercel
+
+echo "Move our final dist directory into .vercel and rename it to output, to create .vercel/output"
+mv dist .vercel/output
