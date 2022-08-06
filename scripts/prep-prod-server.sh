@@ -13,4 +13,4 @@ echo "copying dist directory into .vercel/output"
 cp -R dist .vercel/output
 
 echo "what do we have?"
-ls .vercel/ouptut
+ls .vercel/output
