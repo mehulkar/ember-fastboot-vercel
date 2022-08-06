@@ -1,7 +1,11 @@
 const FastBoot = require('fastboot');
 
 module.exports = async (req, res) => {
-  let app = new FastBoot({ distPath: './dist/dist' });
+  console.log('--------------------');
+  console.log('CWD', process.cwd());
+  console.log('--------------------');
+
+  let app = new FastBoot({ distPath: 'dist' });
 
   console.log('--------------------');
   console.log(`req.url`, req.url);
