@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastboot-app-server": "^3.3.2"
+    "fastboot": "^3.3.2"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/(?<path>.*)",
+      "dest": "/fastboot?path=$path"
+    }
+  ]
+}
