@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+echo "what's in your dist?"
+ls -al dist/
+
+echo "-------------"
+
 echo "deleting .vercel/output directory"
 rm -rf .vercel/output || true
 
