@@ -8,8 +8,10 @@ module.exports = async (req, res) => {
   let app = new FastBoot({ distPath: './dist' });
 
   console.log('--------------------');
+  console.log(`req`, req);
+  console.log('--------------------');
   console.log(`req.url`, req.url);
-  console.log(`req.path`, req.path);
+  console.log(`req.queryParams`, req.queryParams);
   console.log('--------------------');
 
   const result = await app.visit(req.url);
