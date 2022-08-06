@@ -31,3 +31,6 @@ cp -R srv/functions dist
 
 echo "copying config.json into dist direct"
 cp srv/config.json dist
+
+echo "what do we have in dist/ ?"
+ls -al dist
