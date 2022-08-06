@@ -5,37 +5,20 @@ ls -al dist/
 
 echo "-------------"
 
-echo "deleting .vercel/output directory"
-rm -rf .vercel/output || true
-
-echo "creating .vercel/output directory"
-mkdir -p .vercel/output
-
-echo "copying serverless functions to .vercel/output"
-cp -R srv/functions .vercel/output
-
-echo "copying config.json into .vercel/output"
-cp srv/config.json .vercel/output
-
-echo "copying dist directory into .vercel/output"
-cp -R dist .vercel/output
-
-echo "what do we have in .vercel/output?"
-ls -al .vercel/output
-
-echo "------------------------------"
-
-echo "Move dist/ directory one level deep"
+echo "Rename dist directory to static (TODO: do this with ember build output instead)"
 mv dist static
-mkdir dist
-mv static dist/
-mv dist/static dist/dist
 
-echo "copying functions into dist directory instead"
+echo "Make new dist directory"
+mkdir dist
+
+echo "copying functions into dist directory"
 cp -R srv/functions dist
 
 echo "copying config.json into dist direct"
 cp srv/config.json dist
 
-echo "what do we have in dist/ ?"
-ls -al dist
+mv static dist/functions/fastboot.func/
+mv dist/functions/fastboot.func/static dist/functions/fastboot.func/dist
+
+echo "what do we have in dist/functions/fastboot.func ?"
+ls -al dist/functions/fastboot.func
