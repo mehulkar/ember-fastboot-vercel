@@ -20,5 +20,8 @@ cp srv/config.json dist
 mv static dist/functions/fastboot.func/
 mv dist/functions/fastboot.func/static dist/functions/fastboot.func/dist
 
+echo "what do we have in dist?"
+ls -al dist/
+
 echo "what do we have in dist/functions/fastboot.func ?"
 ls -al dist/functions/fastboot.func
