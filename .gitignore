@@ -3,6 +3,7 @@
 # compiled output
 /dist/
 /tmp/
+.vercel
 
 # dependencies
 /bower_components/
